@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Beverage_Psychological_Test/static/css/main.a617e044.chunk.css",
+    "main.js": "/Beverage_Psychological_Test/static/js/main.680b1ee8.chunk.js",
+    "main.js.map": "/Beverage_Psychological_Test/static/js/main.680b1ee8.chunk.js.map",
+    "runtime-main.js": "/Beverage_Psychological_Test/static/js/runtime-main.a6282ea8.js",
+    "runtime-main.js.map": "/Beverage_Psychological_Test/static/js/runtime-main.a6282ea8.js.map",
+    "static/js/2.4e0d13fd.chunk.js": "/Beverage_Psychological_Test/static/js/2.4e0d13fd.chunk.js",
+    "static/js/2.4e0d13fd.chunk.js.map": "/Beverage_Psychological_Test/static/js/2.4e0d13fd.chunk.js.map",
+    "static/js/3.994f4231.chunk.js": "/Beverage_Psychological_Test/static/js/3.994f4231.chunk.js",
+    "static/js/3.994f4231.chunk.js.map": "/Beverage_Psychological_Test/static/js/3.994f4231.chunk.js.map",
+    "index.html": "/Beverage_Psychological_Test/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Beverage_Psychological_Test/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.4e0d13fd.chunk.js.LICENSE.txt": "/Beverage_Psychological_Test/static/js/2.4e0d13fd.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Beverage_Psychological_Test/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6282ea8.js",
+    "static/js/2.4e0d13fd.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.680b1ee8.chunk.js"
+  ]
+}

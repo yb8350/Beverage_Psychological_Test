@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import cafeBgm from '../assets/cafeBgm.mp3';
+import On from '../assets/playOn.png';
+import Off from '../assets/playOff.png';
 
-function BackgroundMusic() {
+function BackgroundMusic({play, onClick}) {
+  const playImage = play? On : Off;
+  const [audio] = useState(new Audio(cafeBgm));
+  if (!play) {
+    audio.pause();
+  } else {
+    audio.play();
+    audio.loop = true;
+  }
   return(
     <div>
-      <audio controls src={cafeBgm} autoPlay={true}>mp3파일을 지원하지 않는 브라우저입니다.</audio>
+      <img src={playImage} onClick={onClick} alt="hi" />
     </div>
   );
 }

@@ -1,11 +1,18 @@
 import Button from "../Button";
 import BackgroundMusic from "../BackgroundMusic";
+import { useState } from 'react';
 import "./Header.scss";
+import song from "../../assets/cafeBgm.mp3";
 
 const isFirst = true;
 
-const Header = () => (
-  <header className="header">
+function Header() {
+  const [play,setPlay] = useState(false);
+  const playing = () => {
+    setPlay(!play);
+  }
+  return(
+    <header className="header">
     <div className="header-content">
       {isFirst && (
         <span>
@@ -19,11 +26,12 @@ const Header = () => (
       </span>
       <span>
         <div className="right">
-          <BackgroundMusic></BackgroundMusic>
+          <BackgroundMusic onClick={playing} play={play}></BackgroundMusic>
         </div>
       </span>
     </div>
   </header>
-);
+  );
+}
 
 export default Header;

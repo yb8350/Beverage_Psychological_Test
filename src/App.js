@@ -1,6 +1,6 @@
 import { Link, Switch, Route } from "react-router-dom";
 import UiMatcher from "./components/UiMatcher";
-
+import BackgroundMusic from "./components/BackgroundMusic";
 function App() {
   const style = {
     textDecoration: "none",
@@ -19,18 +19,19 @@ function App() {
   return (
     <>
       <div>
-        <Link to="/ui/button" style={style}>
+        <Link to="/button" style={style}>
           버튼
         </Link>
         &nbsp;
-        <Link to="/ui/text" style={style}>
+        <Link to="/text" style={style}>
           텍스트
         </Link>
         &nbsp;
-        <Link to="/ui/box" style={style}>
+        <Link to="/box" style={style}>
           박스
         </Link>
         &nbsp;
+        <BackgroundMusic></BackgroundMusic>
       </div>
       <div>
         <Switch>
@@ -40,7 +41,7 @@ function App() {
             render={(props) => <UiMatcher props={props} />}
           ></Route>
           <Route
-            path="/ui/:name"
+            path="/:name"
             render={(props) => <UiMatcher props={props} />}
           ></Route>
         </Switch>

@@ -15,7 +15,7 @@ const Header = () => (
         </span>
       )}
       <span>
-        <div className="center">로고 이미지</div>
+        <div className="logo">나는 무슨 음료일까?</div>
       </span>
       <span>
         <div className="right">

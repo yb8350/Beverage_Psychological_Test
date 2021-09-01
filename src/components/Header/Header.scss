@@ -1,6 +1,6 @@
 .header {
   height: 4rem;
-  background-color: #ffe67c;
+  background-color: #815854;
 
   .header-content {
     height: 100%;
@@ -11,13 +11,33 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (max-width: 1000px) {
+      width: calc(100% - 2rem);
+    }
+
+    @media (min-width: 1000px) {
+      width: calc(100% - 5rem);
+    }
+
     .left {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: rgb(52, 58, 64);
-      font-size: 1.3125rem;
-      font-weight: 600;
+    }
+
+    .logo {
+      display: flex;
+      font-size: 1.8rem;
+      color: #ffffff;
+      font-family: "Jua", sans-serif;
+
+      @media (max-width: 450px) {
+        font-size: 1.3rem;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 1rem;
+      }
     }
 
     .right {

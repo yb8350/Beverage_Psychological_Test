@@ -1,0 +1,29 @@
+.header {
+  height: 4rem;
+  background-color: #ffe67c;
+
+  .header-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(52, 58, 64);
+      font-size: 1.3125rem;
+      font-weight: 600;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+}

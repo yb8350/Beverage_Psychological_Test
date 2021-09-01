@@ -1,6 +1,7 @@
 import { Link, Switch, Route } from "react-router-dom";
 import UiMatcher from "./components/UiMatcher";
-import BackgroundMusic from "./components/BackgroundMusic";
+import Header from "./components/Header";
+
 function App() {
   const style = {
     textDecoration: "none",
@@ -19,7 +20,8 @@ function App() {
   return (
     <>
       <div>
-        <Link to="/button" style={style}>
+        <Header></Header>
+        {/* <Link to="/ui/button" style={style}>
           버튼
         </Link>
         &nbsp;
@@ -30,11 +32,10 @@ function App() {
         <Link to="/box" style={style}>
           박스
         </Link>
-        &nbsp;
-        <BackgroundMusic></BackgroundMusic>
+        &nbsp; */}
       </div>
       <div>
-        <Switch>
+        {/* <Switch>
           <Route
             exact
             path="/"
@@ -44,7 +45,7 @@ function App() {
             path="/:name"
             render={(props) => <UiMatcher props={props} />}
           ></Route>
-        </Switch>
+        </Switch> */}
       </div>
     </>
   );

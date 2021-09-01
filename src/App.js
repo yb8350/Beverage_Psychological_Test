@@ -21,31 +21,31 @@ function App() {
     <>
       <div>
         <Header></Header>
-        <Link to="/ui/button" style={style}>
+        {/* <Link to="/ui/button" style={style}>
           버튼
         </Link>
         &nbsp;
-        <Link to="/ui/text" style={style}>
+        <Link to="/text" style={style}>
           텍스트
         </Link>
         &nbsp;
-        <Link to="/ui/box" style={style}>
+        <Link to="/box" style={style}>
           박스
         </Link>
-        &nbsp;
+        &nbsp; */}
       </div>
       <div>
-        <Switch>
+        {/* <Switch>
           <Route
             exact
             path="/"
             render={(props) => <UiMatcher props={props} />}
           ></Route>
           <Route
-            path="/ui/:name"
+            path="/:name"
             render={(props) => <UiMatcher props={props} />}
           ></Route>
-        </Switch>
+        </Switch> */}
       </div>
     </>
   );

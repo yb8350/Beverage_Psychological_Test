@@ -1,4 +1,6 @@
 import Button from "../Button";
+import BackgroundMusic from "../BackgroundMusic";
+import "./Header.scss";
 
 const isFirst = true;
 
@@ -8,7 +10,7 @@ const Header = () => (
       {isFirst && (
         <span>
           <div className="left">
-            <Button></Button>뒤로 가기(버튼 컴포넌트)
+            <Button>뒤로가기</Button>
           </div>
         </span>
       )}
@@ -16,7 +18,9 @@ const Header = () => (
         <div className="center">로고 이미지</div>
       </span>
       <span>
-        <div className="right">음악 ON/OFF(버튼 컴포넌트)</div>
+        <div className="right">
+          <BackgroundMusic></BackgroundMusic>
+        </div>
       </span>
     </div>
   </header>

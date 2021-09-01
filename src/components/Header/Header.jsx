@@ -2,7 +2,6 @@ import Button from "../Button";
 import BackgroundMusic from "../BackgroundMusic";
 import { useState } from 'react';
 import "./Header.scss";
-import song from "../../assets/cafeBgm.mp3";
 
 const isFirst = true;
 

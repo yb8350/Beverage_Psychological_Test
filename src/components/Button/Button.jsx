@@ -1,4 +1,5 @@
 import "./Button.scss";
+import previousBtn from "../../assets/previous.png"
 
 const Button = ({ children }) => {
   // // to 값이 존재하면 Link를 사용하고, 그렇지 않으면 div를 사용함.
@@ -15,7 +16,7 @@ const Button = ({ children }) => {
   //     {children}
   //   </Element>
   // );
-  return <button>{children}</button>;
+  return <img src={previousBtn} alt="previous"></img>;
 };
 
 export default Button;

@@ -1,5 +1,6 @@
 import { Link, Switch, Route } from "react-router-dom";
 import UiMatcher from "./components/UiMatcher";
+import Header from "./components/Header";
 
 function App() {
   const style = {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <div>
+        <Header></Header>
         <Link to="/ui/button" style={style}>
           버튼
         </Link>
